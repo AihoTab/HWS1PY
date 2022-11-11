@@ -1,15 +1,15 @@
-# 4 Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
+# 2 Напишите программу для. проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
+1.
+x = int(input('Введите число x '))
+y = int(input('Введите число y '))
+z = int(input('Введите число z '))
+# for x in range(2):
+#     for y in range(2):
+#         for z in range(2):
+#             print(not (x or y or z) == (not x and not y and not z))
+#             print(x, y, z)
 
-a = int(input())
-p_inf = float('inf')
-n_inf = float('-inf')
-if a == 1:
-    print(f'Х {0, p_inf} Y {0, p_inf}')
-elif a == 2:
-    print(f'Х {0, n_inf} Y {0, p_inf}')
-elif a == 3:
-    print(f'Х {0, n_inf} Y {0, n_inf}')
-elif a == 4:
-    print(f'Х от {0} до {p_inf} Y {0, n_inf}')
+if not (x or y or z) == (not x and not y and not z):
+    print(True)
 else:
-    print('Введено неверное значение')
+    print(False)
