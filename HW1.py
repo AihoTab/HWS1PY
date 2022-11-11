@@ -1,15 +1,9 @@
-# 2 Напишите программу для. проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
-1.
-x = int(input('Введите число x '))
-y = int(input('Введите число y '))
-z = int(input('Введите число z '))
-# for x in range(2):
-#     for y in range(2):
-#         for z in range(2):
-#             print(not (x or y or z) == (not x and not y and not z))
-#             print(x, y, z)
-
-if not (x or y or z) == (not x and not y and not z):
-    print(True)
-else:
-    print(False)
+# 5 Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
+x1 = int(input('Введите координату X первой точки: '))
+y1 = int(input('Введите координату Y первой точки: '))
+x2 = int(input('Введите координату X второй точки: '))
+y2 = int(input('Введите координату Y второй точки: '))
+x = (x1 - x2)*(x1-x2)
+y = (y1 - y2)*(y1-y2)
+c = [round((x + y)**0.5, 3)]
+print(c)
